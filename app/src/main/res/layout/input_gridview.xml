@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="770px"
+    android:layout_height="70px"
+    android:gravity="center">
+    <TextView
+        android:layout_width="40px"
+        android:layout_height="match_parent" />
+    <TextView
+        android:id="@+id/input_item_instrument"
+        android:layout_width="590px"
+        android:layout_height="match_parent"
+        android:textSize="28px"
+        android:gravity="left"/>
+
+    <TextView
+        android:id="@+id/input_item_sum"
+        android:layout_width="100px"
+        android:layout_height="match_parent"
+        android:textSize="28px"
+        android:gravity="right"/>
+    <TextView
+        android:layout_width="40px"
+        android:layout_height="match_parent"/>
+</LinearLayout>

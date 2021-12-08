@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="1200px"
+    android:layout_height="70px">
+
+    <TextView
+        android:id="@+id/data_maintain_instru"
+        android:layout_width="250px"
+        android:layout_height="70px"
+        android:text=""
+        android:gravity="center_vertical|center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/data_maintain_aa"
+        android:layout_width="350px"
+        android:layout_height="70px"
+        android:layout_marginStart="15px"
+        android:gravity="center_vertical|center"
+        app:layout_constraintStart_toEndOf="@+id/data_maintain_instru"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/data_maintain_pic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/data_maintain_aa"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/data_baoyang_pic" />
+
+    <EditText
+        android:id="@+id/data_maintain_et"
+        android:layout_width="100px"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:textAlignment="center"
+        android:layout_marginStart="10px"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/data_maintain_pic"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/data_baoyang_pic" />
+
+    <ImageView
+        android:id="@+id/data_maintain_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/data_maintain_pic"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/data_baoyang_btn" />
+
+    <ImageView
+        android:id="@+id/data_maintain_state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80px"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/data_maintain_btn"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/data_maintain_state" />
+
+    <ImageView
+        android:id="@+id/data_maintain_go"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80px"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/data_maintain_state"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/data_baoyang_page_icon_baoyang" />
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

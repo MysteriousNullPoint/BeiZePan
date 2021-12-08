@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/guide_admin_background"
+    tools:context="com.example.guide.activity_guide_class">
+
+    <GridView
+        android:id="@+id/gridview"
+        android:layout_width="960px"
+        android:layout_height="450px"
+        android:layout_marginStart="480px"
+        android:layout_marginTop="439px"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:numColumns="3"
+        android:verticalSpacing="30px"
+        android:gravity="center"/>
+
+    <ImageView
+        android:id="@+id/pre_step_class"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="365px"
+        android:layout_marginBottom="145px"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@mipmap/guide_prestep_select" />
+
+    <ImageView
+        android:id="@+id/skip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="835px"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/pre_step_class"
+        app:srcCompat="@mipmap/guide_skip_select" />
+
+    <ImageView
+        android:id="@+id/finish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="365px"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/skip"
+        app:srcCompat="@mipmap/guide_finish_select" />
+
+    <ImageView
+        android:id="@+id/guide_addclass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="457px"
+        android:layout_marginTop="327px"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/guide_admin_add" />
+</androidx.constraintlayout.widget.ConstraintLayout>

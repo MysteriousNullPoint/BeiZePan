@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="880px"
+    android:layout_height="540px"
+    android:background="@mipmap/input_select_cabinet_backgroud">
+
+    <ImageView
+        android:id="@+id/input_cup_ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="525px"
+        android:layout_marginEnd="32px"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/button_ok" />
+
+    <ImageView
+        android:id="@+id/input_cup_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="68px"
+        android:layout_marginBottom="25px"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/input_cup_ok"
+        app:layout_constraintTop_toTopOf="@+id/input_cup_ok"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@mipmap/button_cancel" />
+
+    <com.example.input.MyPicker
+        android:id="@+id/input_linepicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="240px"
+        android:layout_marginTop="162px"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.example.input.MyPicker
+        android:id="@+id/input_rowpicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="194px"
+        app:layout_constraintStart_toEndOf="@+id/input_linepicker"
+        app:layout_constraintTop_toTopOf="@+id/input_linepicker" />
+</androidx.constraintlayout.widget.ConstraintLayout>

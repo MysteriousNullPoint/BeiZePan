@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/cab_backgroud_a"
+    tools:context="com.example.home.fragment_home">
+
+    <TextView
+        android:id="@+id/home_tv_sum"
+        android:layout_width="120px"
+        android:layout_height="35px"
+        android:layout_marginStart="54px"
+        android:layout_marginTop="80px"
+        android:textSize="30px"
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/home_tv_borrowed"
+        android:layout_width="120px"
+        android:layout_height="35px"
+        android:layout_marginStart="82px"
+        android:text="0"
+        android:textSize="30px"
+        android:textAlignment="center"
+        app:layout_constraintStart_toEndOf="@+id/home_tv_sum"
+        app:layout_constraintTop_toTopOf="@+id/home_tv_sum" />
+
+    <TextView
+        android:id="@+id/home_tv_input"
+        android:layout_width="120px"
+        android:layout_height="35px"
+        android:layout_marginTop="178px"
+        android:textSize="30px"
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="@+id/home_tv_sum"
+        app:layout_constraintTop_toBottomOf="@+id/home_tv_sum" />
+
+    <TextView
+        android:id="@+id/home_tv_scrap"
+        android:layout_width="120px"
+        android:layout_height="35px"
+        android:text="0"
+        android:textSize="30px"
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="@+id/home_tv_borrowed"
+        app:layout_constraintTop_toTopOf="@+id/home_tv_input" />
+
+    <GridView
+        android:id="@+id/home_gridview"
+        android:layout_width="1022px"
+        android:layout_height="726px"
+        android:layout_marginEnd="29px"
+        android:gravity="center"
+        android:numColumns="7"
+        android:verticalSpacing="242px"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/home_cupboard_background"
+        android:layout_width="1080px"
+        android:layout_height="820px"
+        android:src="@mipmap/cabinet_situation_backgrouod"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/home_state"
+        android:layout_width="90px"
+        android:layout_height="142px"
+        android:layout_marginStart="27px"
+        android:layout_marginTop="88px"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="@+id/home_gridview"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/home_cupboard_state" />
+
+    <TextView
+        android:id="@+id/home_name"
+        android:layout_width="90px"
+        android:layout_height="30px"
+        android:layout_marginTop="10px"
+        android:background="@color/black"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="19px"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@+id/home_state"
+        app:layout_constraintTop_toBottomOf="@+id/home_state" />
+
+    <ImageView
+        android:id="@+id/home_synchronization"
+        android:layout_width="90px"
+        android:layout_height="90px"
+        android:layout_marginTop="306px"
+        android:layout_marginEnd="933px"
+        android:visibility="invisible"
+        android:src="@drawable/synchronization"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/home_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:layout_marginEnd="106px"
+        android:layout_marginBottom="190px"
+        android:src="@mipmap/cabinet_situation_bnt_back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ListView
+        android:id="@+id/home_listview"
+        android:layout_width="798px"
+        android:layout_height="560px"
+        android:layout_marginEnd="70px"
+        android:layout_marginBottom="300px"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/main_bcakgroud_maintenance"
+        android:gravity="center_vertical|center_horizontal"
+        android:textColor="@color/white"
+        android:textSize="40px"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/home_instru_to_return"
+        android:layout_width="430px"
+        android:layout_height="40px"
+        android:layout_marginBottom="425px"
+        android:text="长期未归还>30天"
+        android:textSize="40px"
+        android:fontFamily="@font/simyou"
+        android:gravity="center_horizontal|center_vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ListView
+        android:id="@+id/home_return_listview"
+        android:layout_width="360px"
+        android:layout_height="340px"
+        android:layout_marginStart="35px"
+        android:layout_marginBottom="25px"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/home_maintain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="(0)待保养"
+        android:textSize="40px"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/textView3"
+        app:layout_constraintTop_toTopOf="@+id/textView3" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<level-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/input_bnt_start_normal"
+        android:minLevel="0"
+        android:maxLevel="10"/>
+    <item android:drawable="@drawable/inventory_tacking_page_btn_end"
+        android:minLevel="11"
+        android:maxLevel="20"/>
+    <item android:drawable="@drawable/inventory_tacking_page_btn_reset"
+        android:minLevel="21"
+        android:maxLevel="30"/>
+</level-list>

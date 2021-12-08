@@ -1,0 +1,110 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/data_background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/data_page_backgroud"
+    tools:context="com.example.data.fragment_data">
+
+    <ImageView
+        android:id="@+id/data_btn_statistic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/data_tab_statistic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/data_btn_scrap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/data_tab_scrap"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/data_btn_statistic" />
+
+    <ImageView
+        android:id="@+id/data_btn_maintain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/data_tab_maintain"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/data_btn_scrap" />
+
+    <ImageView
+        android:id="@+id/data_btn_bill"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/data_tab_bill"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/data_btn_maintain" />
+
+    <TextView
+        android:id="@+id/data_tv_tab"
+        android:layout_width="1200px"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="150px"
+        android:layout_marginTop="50px"
+        android:textSize="40px"
+        android:fontFamily="sans-serif"
+        android:visibility="invisible"
+        app:layout_constraintStart_toEndOf="@+id/data_btn_statistic"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ListView
+        android:id="@+id/data_listView"
+        android:layout_width="1200px"
+        android:layout_height="770px"
+        android:layout_marginStart="100px"
+        android:layout_marginTop="20px"
+        android:visibility="invisible"
+        app:layout_constraintStart_toEndOf="@+id/data_btn_scrap"
+        app:layout_constraintTop_toBottomOf="@+id/data_tv_tab" />
+
+    <ImageView
+        android:id="@+id/data_export"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40px"
+        android:layout_marginEnd="46px"
+        android:src="@mipmap/stock_page_export"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/data_spinner"
+        android:layout_width="250px"
+        android:layout_height="60px"
+        android:layout_marginStart="250px"
+        android:layout_marginTop="45px"
+        android:dropDownVerticalOffset="55px"
+        android:visibility="invisible"
+        android:background="@android:color/transparent"
+        app:layout_constraintStart_toStartOf="@+id/data_tv_tab"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.example.AAChartCoreLib.AAChartCreator.AAChartView
+        android:id="@+id/barchart"
+        android:layout_width="950px"
+        android:layout_height="458px"
+        android:layout_marginStart="140px"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.example.AAChartCoreLib.AAChartCreator.AAChartView
+        android:id="@+id/barchart_2"
+        android:layout_width="420px"
+        android:layout_height="458px"
+        android:layout_marginEnd="10px"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.example.AAChartCoreLib.AAChartCreator.AAChartView
+        android:id="@+id/barchart_3"
+        android:layout_width="1390px"
+        android:layout_height="458px"
+        android:layout_marginStart="140px"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,80 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.settings.fragment_set_reset"
+    android:background="@mipmap/setting_reset_backgroud">
+
+    <ImageView
+        android:id="@+id/set_reset_tab_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/settings_tab_info"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/set_reset_tab_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/settings_tab_id"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/set_reset_tab_info" />
+
+
+    <ImageView
+        android:id="@+id/set_reset_tab_stock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/settings_tab_stock"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/set_reset_tab_id" />
+
+    <ImageView
+        android:id="@+id/set_reset_tab_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/settings_tab_time"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/set_reset_tab_stock" />
+    <ImageView
+        android:id="@+id/set_reset_tab_reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/settings_tab_reset"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/set_reset_tab_time" />
+
+    <ImageView
+        android:id="@+id/settings_reset_tab_sync"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/settings_tab_sync"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/set_reset_tab_reset" />
+    <ImageView
+        android:id="@+id/set_reset_btn_confirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="580px"
+        android:layout_marginBottom="120px"
+        android:src="@mipmap/settings_tab_page_bnt_ok"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/set_reset_edit"
+        android:layout_width="700px"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="382px"
+        android:layout_marginEnd="210px"
+        android:background="@null"
+        android:fontFamily="@font/simyou"
+        android:hint="请输入密码"
+        android:inputType="textPassword"
+        android:textColor="#3399fe"
+        android:textSize="50px"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

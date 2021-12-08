@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/input_background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/input_backgroud_connected"
+    tools:context="com.example.input.fragment_input">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:id="@+id/input_cup_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="34px"
+        android:layout_marginEnd="620px"
+        android:textSize="40px"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:background="@drawable/input_label_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"  />
+
+    <ImageView
+        android:id="@+id/input_start_scan"
+        android:layout_width="140px"
+        android:layout_height="140px"
+        android:layout_marginEnd="700px"
+        android:layout_marginBottom="17px"
+        android:src="@drawable/input_start_scan"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/input_btn_confirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="260px"
+        android:layout_marginBottom="47px"
+        android:src="@drawable/input_confirm"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/input_btn_rescan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="260px"
+        android:src="@drawable/input_restart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/input_btn_confirm" />
+
+    <TextView
+        android:id="@+id/input_sum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:textSize="40px"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/input_start_scan"
+        app:layout_constraintEnd_toEndOf="@+id/input_start_scan"
+        app:layout_constraintStart_toStartOf="@+id/input_start_scan"
+        app:layout_constraintTop_toTopOf="@+id/input_start_scan" />
+
+    <GridView
+        android:id="@+id/input_gridview"
+        android:layout_width="1540px"
+        android:layout_height="560px"
+        android:layout_marginBottom="215px"
+        android:gravity="center"
+        android:numColumns="2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/input_time"
+        android:layout_width="100px"
+        android:layout_height="70px"
+        android:layout_marginStart="416px"
+        android:layout_marginBottom="170px"
+        android:gravity="center"
+        android:text="0"
+        android:textSize="32px"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/input_gridview" />
+
+    <TextView
+        android:id="@+id/input_number"
+        android:layout_width="100px"
+        android:layout_height="70px"
+        android:layout_marginStart="743px"
+        android:gravity="center"
+        android:text="0"
+        android:textSize="32px"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@id/input_time"
+        app:layout_constraintStart_toStartOf="@+id/input_time" />
+</androidx.constraintlayout.widget.ConstraintLayout>

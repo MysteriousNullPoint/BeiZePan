@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="1200px"
+    android:layout_height="70px">
+
+    <TextView
+        android:id="@+id/data_log_date"
+        android:layout_width="250px"
+        android:layout_height="70px"
+        android:text=""
+        android:gravity="center_vertical|center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/data_log_behave"
+        android:layout_width="250px"
+        android:layout_height="70px"
+        android:layout_marginStart="15px"
+        android:gravity="center_vertical|center"
+        app:layout_constraintStart_toEndOf="@+id/data_log_date"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/data_log_instru"
+        android:layout_width="230px"
+        android:layout_height="70px"
+        android:gravity="center_vertical|center"
+        app:layout_constraintStart_toEndOf="@+id/data_log_behave"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/data_log_stock"
+        android:layout_width="250px"
+        android:layout_height="70px"
+        android:gravity="center_vertical|center"
+        android:text=""
+        app:layout_constraintStart_toEndOf="@+id/data_log_instru"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/data_log_admin"
+        android:layout_width="170px"
+        android:layout_height="70px"
+        android:gravity="center_vertical|center"
+        android:text=""
+        app:layout_constraintStart_toEndOf="@+id/data_log_stock"
+        app:layout_constraintTop_toTopOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

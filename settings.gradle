@@ -1,0 +1,4 @@
+include ':app'
+include ':azlist'
+include ':fuzzysearchlibrary'
+rootProject.name = "SD100"

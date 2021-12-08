@@ -1,0 +1,111 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.settings.fragment_settings"
+    android:background="@mipmap/settings_info_background">
+
+    <ImageView
+        android:id="@+id/set_info_tab_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/settings_tab_info"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/set_info_tab_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/settings_tab_id"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/set_info_tab_info" />
+
+
+    <ImageView
+        android:id="@+id/set_info_tab_stock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/settings_tab_stock"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/set_info_tab_id" />
+
+    <ImageView
+        android:id="@+id/set_info_tab_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/settings_tab_time"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/set_info_tab_stock" />
+    <ImageView
+        android:id="@+id/set_info_tab_reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/settings_tab_reset"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/set_info_tab_time" />
+
+    <ImageView
+        android:id="@+id/set_info_btn_confirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="580px"
+        android:layout_marginBottom="120px"
+        android:src="@mipmap/settings_tab_page_bnt_ok"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/settings_school"
+        android:layout_width="700px"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="540px"
+        android:layout_marginTop="257px"
+        android:background="@null"
+        android:fontFamily="@font/simyou"
+        android:hint="输入学校名称"
+        android:inputType="textNoSuggestions"
+        android:textColor="#3399fe"
+        android:textSize="50px"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/settings_lab"
+        android:layout_width="700px"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="95px"
+        android:background="@null"
+        android:fontFamily="@font/simyou"
+        android:hint="输入仪器室名称"
+        android:inputType="textNoSuggestions"
+        android:textColor="#3399fe"
+        android:textSize="50px"
+        app:layout_constraintStart_toStartOf="@+id/settings_school"
+        app:layout_constraintTop_toBottomOf="@+id/settings_school" />
+
+    <EditText
+        android:id="@+id/settings_days"
+        android:layout_width="700px"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="95px"
+        android:background="@null"
+        android:fontFamily="@font/simyou"
+        android:hint="输入长期未归还天数"
+        android:inputType="number"
+        android:textColor="#3399fe"
+        android:textSize="50px"
+        app:layout_constraintStart_toStartOf="@+id/settings_lab"
+        app:layout_constraintTop_toBottomOf="@+id/settings_lab" />
+
+    <ImageView
+        android:id="@+id/settings_info_tab_sync"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/settings_tab_sync"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/set_info_tab_reset" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

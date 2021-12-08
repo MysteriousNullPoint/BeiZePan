@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/main_bg"
+    tools:context=".MainActivity"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <ImageView
+        android:id="@+id/tab_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="70px"
+        android:layout_marginTop="260px"
+        android:contentDescription="@string/description"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/tab_home" />
+
+    <ImageView
+        android:id="@+id/tab_stock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70px"
+        android:contentDescription="@string/description"
+        app:layout_constraintStart_toStartOf="@+id/tab_home"
+        app:layout_constraintTop_toBottomOf="@+id/tab_home"
+        app:srcCompat="@drawable/tab_stock" />
+
+    <ImageView
+        android:id="@+id/tab_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70px"
+        android:contentDescription="@string/description"
+        app:layout_constraintStart_toStartOf="@+id/tab_stock"
+        app:layout_constraintTop_toBottomOf="@+id/tab_stock"
+        app:srcCompat="@drawable/tab_data" />
+
+    <ImageView
+        android:id="@+id/tab_input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70px"
+        android:contentDescription="@string/description"
+        app:layout_constraintStart_toStartOf="@+id/tab_data"
+        app:layout_constraintTop_toBottomOf="@+id/tab_data"
+        app:srcCompat="@drawable/input" />
+
+    <ImageView
+        android:id="@+id/tab_settings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70px"
+        app:layout_constraintStart_toStartOf="@+id/tab_file"
+        app:layout_constraintTop_toBottomOf="@+id/tab_file"
+        app:srcCompat="@drawable/tab_settings" />
+
+    <ImageView
+        android:id="@+id/tab_file"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70px"
+        app:layout_constraintStart_toStartOf="@+id/tab_input"
+        app:layout_constraintTop_toBottomOf="@+id/tab_input"
+        app:srcCompat="@drawable/tab_file" />
+
+    <TextClock
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45px"
+        android:layout_marginEnd="260px"
+        android:format12Hour="yyyy年MM月dd日  EEEE  HH:mm"
+        android:format24Hour="yyyy年MM月dd日  EEEE  HH:mm"
+        android:textColor="#666666"
+        android:textSize="30px"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/aerial_state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="49px"
+        android:layout_marginEnd="130px"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/aerial_state" />
+
+    <ImageView
+        android:id="@+id/sta_power"
+        android:layout_width="50px"
+        android:layout_height="28px"
+        android:layout_marginTop="50px"
+        android:layout_marginEnd="50px"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/sta_power" />
+
+
+    <TextView
+        android:id="@+id/school_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="455px"
+        android:layout_marginTop="59px"
+        android:text="TextView"
+        android:textColor="#3399fe"
+        android:textSize="41px"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lab_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10px"
+        android:text="TextView"
+        android:textColor="@color/black"
+        android:textSize="41px"
+        app:layout_constraintStart_toStartOf="@+id/school_name"
+        app:layout_constraintTop_toBottomOf="@+id/school_name" />
+
+    <FrameLayout
+        android:id="@+id/fragment"
+        android:layout_width="1540px"
+        android:layout_height="946px"
+        android:layout_marginEnd="30px"
+        android:layout_marginBottom="30px"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+    </FrameLayout>
+
+
+
+    <EditText
+        android:id="@+id/edit_main"
+        android:layout_width="500px"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120px"
+        android:layout_marginEnd="180px"
+        android:background="@null"
+        android:fontFamily="@font/simyou"
+        android:hint="搜索"
+        android:inputType="textNoSuggestions"
+        android:textColor="#3399fe"
+        android:textSize="35px"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="500px"
+        android:layout_height="500px"
+        android:layout_marginTop="20px"
+        app:layout_constraintStart_toStartOf="@+id/edit_main"
+        app:layout_constraintTop_toBottomOf="@id/edit_main">
+
+        <LinearLayout
+            android:id="@+id/layout_fuzzy_search"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:focusable="true"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#66000000" />
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_fuzzy_search_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/main_btn_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="0px"
+        android:layout_marginBottom="50px"
+        app:layout_constraintBottom_toTopOf="@+id/fragment"
+        app:layout_constraintStart_toEndOf="@+id/edit_main"
+        app:srcCompat="@mipmap/sea_label_bant_search" />
+
+    <ImageView
+        android:id="@+id/main_sta_charge"
+        android:layout_width="30px"
+        android:layout_height="15px"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/sta_power"
+        app:layout_constraintEnd_toEndOf="@+id/sta_power"
+        app:layout_constraintStart_toStartOf="@+id/sta_power"
+        app:layout_constraintTop_toTopOf="@+id/sta_power"
+        app:srcCompat="@drawable/sta_icon_power_charge" />
+</androidx.constraintlayout.widget.ConstraintLayout>

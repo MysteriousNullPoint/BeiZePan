@@ -1,0 +1,54 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/dock_page_background"
+    tools:context="com.example.dock.fragment_dock">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/dock_tv_use"
+        android:layout_width="1000px"
+        android:layout_height="72px"
+        android:layout_marginTop="56px"
+        android:gravity="center_vertical|center_horizontal"
+        android:text=""
+        android:textColor="@color/blue"
+        android:textSize="64px"
+        android:fontFamily="@font/simyou"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <GridView
+        android:id="@+id/dock_gridview"
+        android:layout_width="match_parent"
+        android:layout_height="630px"
+        android:layout_marginBottom="130px"
+        android:columnWidth="770px"
+        android:numColumns="2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/dock_add_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="260px"
+        android:layout_marginBottom="28px"
+        android:src="@mipmap/borrowing_page_btn_add"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/dock_confirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="260px"
+        android:layout_marginBottom="28px"
+        android:src="@mipmap/borrowing_page_btn_ok"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

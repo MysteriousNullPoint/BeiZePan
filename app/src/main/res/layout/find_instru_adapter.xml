@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="800px"
+    android:layout_height="70px"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/find_name"
+        android:layout_width="150px"
+        android:layout_height="70px"
+        android:gravity="center_vertical|left"
+        android:textSize="28px"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <GridView
+        android:id="@+id/find_detail_location"
+        android:layout_width="380px"
+        android:layout_height="45px"
+        android:layout_marginTop="12px"
+        android:orientation="horizontal"
+        android:gravity="center_vertical|right"
+        android:numColumns="5"
+        android:textSize="28px"
+        app:layout_constraintStart_toEndOf="@+id/find_name"
+        app:layout_constraintTop_toTopOf="@+id/find_name" />
+
+    <ImageView
+        android:id="@+id/find_add_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50px"
+        android:background="@mipmap/xunzhi_page_delete"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/find_detail_location"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.428" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

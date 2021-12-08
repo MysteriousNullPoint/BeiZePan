@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/guide_date"
+    tools:context="com.example.guide.activity_guide_date">
+
+    <DatePicker
+        android:id="@+id/datePicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="340px"
+        android:layout_marginTop="350px"
+        android:scaleX="1.5"
+        android:scaleY="1.5"
+        android:calendarViewShown="false"
+        android:datePickerMode="spinner"
+        android:theme="@style/MyDatePicker"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TimePicker
+        android:id="@+id/timePicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleX="1.5"
+        android:scaleY="1.5"
+        android:layout_marginStart="330px"
+        android:timePickerMode="spinner"
+        android:theme="@style/MyTimePicker"
+        app:layout_constraintStart_toEndOf="@+id/datePicker"
+        app:layout_constraintTop_toTopOf="@+id/datePicker"/>
+
+    <ImageView
+        android:id="@+id/next_step_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="365px"
+        android:layout_marginBottom="145px"
+        android:theme="@style/MyTimePicker"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@mipmap/guide_nextstep_selected" />
+
+    <ImageView
+        android:id="@+id/pre_step"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="365px"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/next_step_date"
+        app:srcCompat="@mipmap/guide_prestep_select" />
+</androidx.constraintlayout.widget.ConstraintLayout>

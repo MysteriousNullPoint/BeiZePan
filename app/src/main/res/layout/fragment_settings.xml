@@ -1,0 +1,203 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/data_background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.settings.fragment_settings">
+
+    <ImageView
+        android:id="@+id/settings_tab_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/settings_tab_info"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/settings_tab_tag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/settings_tab_tag"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/settings_tab_info" />
+
+    <ImageView
+        android:id="@+id/settings_tab_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/settings_tab_time"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/settings_tab_stock" />
+
+    <ImageView
+        android:id="@+id/settings_tab_reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/settings_tab_reset"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/settings_tab_time" />
+
+    <ImageView
+        android:id="@+id/settings_background"
+        android:layout_width="1410px"
+        android:layout_height="946px"
+        android:src="@drawable/settings_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/settings_school"
+        android:layout_width="700px"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="540px"
+        android:layout_marginTop="257px"
+        android:background="@null"
+        android:fontFamily="@font/simyou"
+        android:hint="输入学校名称"
+        android:inputType="textNoSuggestions"
+        android:textColor="#3399fe"
+        android:textSize="50px"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/settings_lab"
+        android:layout_width="700px"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="95px"
+        android:background="@null"
+        android:fontFamily="@font/simyou"
+        android:hint="输入仪器室名称"
+        android:inputType="textNoSuggestions"
+        android:textColor="#3399fe"
+        android:textSize="50px"
+        app:layout_constraintStart_toStartOf="@+id/settings_school"
+        app:layout_constraintTop_toBottomOf="@+id/settings_school" />
+
+    <EditText
+        android:id="@+id/settings_days"
+        android:layout_width="700px"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="95px"
+        android:background="@null"
+        android:fontFamily="@font/simyou"
+        android:hint="输入保养天数"
+        android:inputType="number"
+        android:textColor="#3399fe"
+        android:textSize="50px"
+        app:layout_constraintStart_toStartOf="@+id/settings_lab"
+        app:layout_constraintTop_toBottomOf="@+id/settings_lab" />
+
+    <EditText
+        android:id="@+id/settings_reset"
+        android:layout_width="700px"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="382px"
+        android:layout_marginEnd="210px"
+        android:background="@null"
+        android:fontFamily="@font/simyou"
+        android:hint="请输入密码"
+        android:inputType="textPassword"
+        android:textColor="#3399fe"
+        android:textSize="50px"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/settings_btn_confirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="580px"
+        android:layout_marginBottom="120px"
+        android:src="@mipmap/settings_tab_page_bnt_ok"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+    <DatePicker
+        android:id="@+id/settings_datePicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="300px"
+        android:layout_marginTop="200px"
+        android:calendarViewShown="false"
+        android:datePickerMode="spinner"
+        android:visibility="gone"
+        android:theme="@style/SettingDatePicker"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TimePicker
+        android:id="@+id/settings_timePicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100px"
+        android:timePickerMode="spinner"
+        android:visibility="gone"
+        android:theme="@style/SettingTimePicker"
+        app:layout_constraintStart_toEndOf="@+id/settings_datePicker"
+        app:layout_constraintTop_toTopOf="@+id/settings_datePicker"/>
+
+    <GridView
+        android:id="@+id/settings_gridview"
+        android:layout_width="960px"
+        android:layout_height="450px"
+        android:layout_marginEnd="225px"
+        android:layout_marginBottom="275px"
+        android:gravity="center"
+        android:numColumns="3"
+        android:verticalSpacing="30px"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/settings_addbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="918px"
+        android:layout_marginBottom="792px"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/settings_btn_addid" />
+
+    <ImageView
+        android:id="@+id/settings_tab_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/settings_tab_id"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/settings_tab_tag" />
+
+    <ImageView
+        android:id="@+id/settings_tab_stock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/settings_tab_stock"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/settings_tab_id" />
+
+    <ImageView
+        android:id="@+id/settings_btn_import"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="152dp"
+        android:layout_marginBottom="75px"
+        android:src="@mipmap/update_stock_list_page_bnt_in"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/settings_btn_export"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:layout_marginEnd="300px"
+        android:layout_marginBottom="75px"
+        android:src="@mipmap/update_stock_list_page_bnt_out"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

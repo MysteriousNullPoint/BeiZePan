@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/input_background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/inventory_page_backgroud"
+    tools:context="com.example.stock.fragment_inventory">
+
+    <ImageView
+        android:id="@+id/inventory_tab_all"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/inventory_tab_all"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/inventory_tab_error"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/inventory_tab_error"
+        app:layout_constraintStart_toEndOf="@+id/inventory_tab_all"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/inventory_startScan"
+        android:layout_width="140px"
+        android:layout_height="140px"
+        android:layout_marginBottom="19px"
+        android:src="@drawable/inventory_start"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/inventory_btn_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="260px"
+        android:src="@mipmap/inventory_tacking_page_btn_preserve"
+        app:layout_constraintBottom_toBottomOf="@+id/inventory_startScan"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/inventory_startScan"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <ImageView
+        android:id="@+id/inventory_btn_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="260px"
+        android:src="@mipmap/inventory_tacking_page_btn_cancel"
+        app:layout_constraintBottom_toBottomOf="@+id/inventory_startScan"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/inventory_startScan" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="1496px"
+        android:layout_height="500px"
+        android:layout_marginStart="44px"
+        android:layout_marginBottom="270px"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/inventory_recycler_list"
+            android:layout_width="1456px"
+            android:layout_height="490px"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <com.tuacy.azlist.AZWaveSideBarView
+            android:id="@+id/inventory_bar_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/inventory_date"
+        android:gravity="left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="400px"
+        android:layout_marginBottom="212px"
+        android:textSize="32px"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/inventory_admin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:layout_marginStart="680px"
+        android:text=""
+        android:textSize="32px"
+        app:layout_constraintBottom_toBottomOf="@+id/inventory_date"
+        app:layout_constraintStart_toStartOf="@+id/inventory_date" />
+
+    <TextView
+        android:id="@+id/inventory_tv_sum"
+        android:layout_width="150px"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:text="0"
+        android:textSize="40px"
+        android:gravity="center"
+        android:textColor="@color/blue"
+        app:layout_constraintBottom_toBottomOf="@+id/inventory_tab_all"
+        app:layout_constraintEnd_toEndOf="@+id/inventory_tab_all"
+        app:layout_constraintTop_toTopOf="@+id/inventory_tab_all" />
+
+    <TextView
+        android:id="@+id/inventory_tv_error"
+        android:layout_width="150px"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:textSize="40px"
+        android:text="0"
+        android:textColor="@color/white"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="@+id/inventory_tab_error"
+        app:layout_constraintEnd_toEndOf="@+id/inventory_tab_error"
+        app:layout_constraintTop_toTopOf="@+id/inventory_tab_error" />
+
+    <TextView
+        android:id="@+id/inventory_tv_total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="78px"
+        android:layout_marginStart="43px"
+        android:text="123"
+        android:gravity="left"
+        android:textSize="32px"
+        app:layout_constraintStart_toEndOf="@+id/inventory_tv_sum"
+        app:layout_constraintTop_toBottomOf="@+id/inventory_tab_error" />
+</androidx.constraintlayout.widget.ConstraintLayout>

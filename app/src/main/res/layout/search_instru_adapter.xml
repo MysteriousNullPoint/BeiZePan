@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="1350px"
+    android:layout_height="70px"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/search_name"
+        android:layout_width="420px"
+        android:layout_height="70px"
+        android:gravity="center_vertical|left"
+        android:textSize="28px"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <GridView
+        android:id="@+id/search_detail_location"
+        android:layout_width="600px"
+        android:layout_height="45px"
+        android:orientation="horizontal"
+        android:gravity="center_vertical|right"
+        android:numColumns="8"
+        android:textSize="28px"
+        android:layout_marginTop="12px"
+        app:layout_constraintStart_toEndOf="@+id/search_name"
+        app:layout_constraintTop_toTopOf="@+id/search_name" />
+
+    <TextView
+        android:id="@+id/search_detail_stock"
+        android:layout_width="270px"
+        android:layout_height="70px"
+        android:gravity="center_vertical|center"
+        android:textSize="28px"
+        app:layout_constraintStart_toEndOf="@+id/search_detail_location"
+        app:layout_constraintTop_toTopOf="@+id/search_name" />
+
+
+    <ImageView
+        android:id="@+id/search_add_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/search_add_address"
+        app:layout_constraintBottom_toBottomOf="@+id/search_detail_stock"
+        app:layout_constraintStart_toEndOf="@+id/search_detail_stock"
+        app:layout_constraintTop_toTopOf="@+id/search_detail_stock" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
